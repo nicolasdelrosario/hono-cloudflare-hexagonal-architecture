@@ -1,0 +1,23 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"module": "ESNext",
+		"moduleResolution": "Bundler",
+		"strict": true,
+		"skipLibCheck": true,
+		"lib": ["ESNext"],
+		"types": ["@cloudflare/workers-types/2023-07-01"],
+		"jsx": "react-jsx",
+		"jsxImportSource": "hono/jsx",
+		"allowSyntheticDefaultImports": true,
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"paths": {
+			"@/*": ["./src/*"],
+			"@Test/*": ["./test/*"],
+			"@Shared/*": ["./src/lib/Shared/*"],
+			"@User/*": ["./src/lib/User/*"],
+			"@Auth/*": ["./src/lib/Auth/*"]
+		}
+	}
+}

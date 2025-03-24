@@ -1,0 +1,25 @@
+{
+  "name": "hono-cloudflare-hexagonal-architecture",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy --minify",
+    "format": "bunx biome format --write src",
+    "lint": "bunx biome lint --write src",
+    "check": "bunx biome check src",
+    "migrate": "wrangler d1 migrations apply your-db --remote",
+    "migrate:local": "wrangler d1 migrations apply your-db --local"
+  },
+  "dependencies": {
+    "@hono/zod-validator": "^0.4.3",
+    "@types/uuid": "^10.0.0",
+    "bcryptjs": "^3.0.2",
+    "hono": "^4.7.5",
+    "uuid": "^11.1.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@cloudflare/workers-types": "^4.20250214.0",
+    "wrangler": "^4.4.0"
+  }
+}

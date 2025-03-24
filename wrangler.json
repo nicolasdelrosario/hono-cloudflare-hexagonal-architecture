@@ -1,0 +1,13 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "hono-cloudflare-hexagonal-architecture",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-03-24",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "your-db",
+      "database_id": "5fdc8efc-b297-4c92-8c98-fc7962503774"
+    }
+  ]
+}
