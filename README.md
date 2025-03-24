@@ -129,15 +129,16 @@ The API uses JWT for authentication with two types of tokens:
 
 ### Auth
 
-- ```POST /auth/register``` - Register new user
-- ```POST /auth/login``` - Login user
-- ```POST /auth/refresh``` - Refresh access token
+- ```POST /login``` - Login user
+- ```POST /logout``` - Logout user
+- ```POST /refresh-token``` - Refresh access token
 
 ### Users
 
 - ```GET /users``` - Get all users
 - ```GET /users/me``` - Get current user
 - ```GET /users/:id``` - Get user by ID
+- ```POST /users``` - Register new user
 - ```PUT /users/:id``` - Update user
 - ```DELETE /users/:id``` - Delete user
 
